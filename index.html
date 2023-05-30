@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="container">
+        <div id="colors">
+            <input type="radio" name="colors" id="color1">
+            <label id="color1" for="color1">1</label>
+            <input type="radio" name="colors" id="color2">
+            <label id="color2" for="color2">2</label>
+            <input type="radio" name="colors" id="color3">
+            <label id="color3" for="color3">3</label>
+        </div>
+        <div id="calculator">
+            <div id="display">
+                <div id="value-old"></div>
+                <div id="value-new"></div>
+            </div>
+                <button class="col-2 button" onclick="display.deleteAll()">C</button>
+                <button class= "button" onclick="display.delete()">&larr;</button>
+                <button class="operator button" value="division">%</button>
+                <button class="number button">7</button>
+                <button class="number button">8</button>
+                <button class="number button">9</button>
+                <button class="operator button" value="multiplicacion">*</button>
+                <button class="number button">4</button>
+                <button class="number button">5</button>
+                <button class="number button">6</button>
+                <button class="operator button" value="resta">-</button>
+                <button class="number button">1</button>
+                <button class="number button">2</button>
+                <button class="number button">3</button>
+                <button class="operator button" value="suma">+</button>
+                <button class="col-2 number button">0</button>
+                <button class="number button">.</button>
+                <button class="operator button" value="igual">=</button>
+        </div>
+    </section>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>

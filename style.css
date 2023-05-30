@@ -1,0 +1,121 @@
+
+:root {
+    --body-color: cadetblue;
+    --calculator-color: rgb(66, 190, 194);
+    --button-color: rgb(66, 190, 194);
+    --button-color-active: rgb(53, 156, 160);
+    --button-color-font: white;
+    --display-color: #363636;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--body-color);
+    font-family: 'Big Shoulders Inline Text', cursive;
+
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+input{
+    display: none;
+}
+#colors{
+    width: 130px;
+    height: 35px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+labeL{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 5px 3px 0px 2px #00000033;
+    color: black;
+}
+
+label:hover{
+    transform: scale(1.5);
+    transition: 400ms;
+}
+#color1{
+    background-color:rgb(60 60 140);
+}
+
+#color2{
+    background-color: rgb(209 209 223);
+}
+
+#color3{
+    background-color: rgb(66, 190, 194);
+}
+
+#calculator{
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    gap: 2px;
+    background-color: var(--calculator-color);
+    border-radius: 32px;
+    padding: 15px;
+    box-shadow: 15px 10px 0px 5px #00000033;
+}
+button{
+    cursor: pointer;
+    border-radius: 32px;
+    border: none;
+    background-color: var(--button-color);
+    box-shadow: 10px 5px 10px 5px #00000040, -10px -5px 15px 3px #a5e2d321;
+    font-size: 1.5em;
+    color: var(--button-color-font);
+}
+
+.col-2{
+    grid-column: span 2;
+}
+
+button:active{
+    background-color: var(--button-color-active);
+}
+#display{
+    grid-column: 1 / -1;
+    background-color: var(--display-color);
+    color: white;
+    padding: 14px;
+    margin: 10px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    text-align: right;
+    word-break: break-all;
+    border-radius: 32px;
+    box-shadow: 0px 0px 0px 10px #00000033;
+}
+
+#value-old{
+    font-size: 1.5em;
+}
+
+#value-new{
+    font-size: 2em;
+}
+
+
